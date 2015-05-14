@@ -1,0 +1,54 @@
+:host {
+    margin: auto;
+    display: block;
+}
+
+div.watchface {
+    border-radius: 50%;
+    /*    padding: 2px;*/
+    
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border: 5px double #000;
+}
+
+div.watch-strap {
+    height: 300px;
+    width: 100px;
+    background: #000;
+    position: absolute;
+    left: 50PX;
+    top: -50px;
+    z-index: -11;
+}
+
+div.watch-crown {
+    height: 30px;
+    width: 15px;
+    background: #000;
+    position: absolute;
+    right: -19px;
+    top: 86px;
+    border-radius: 3px;
+}
+
+div.content-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+polyfill-next-selector {
+    content: ':host'
+}
+
+::content * {
+    position: relative;
+    overflow-wrap: break-word;
+}

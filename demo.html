@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <!-- 1. Load webcomponents.min.js for polyfill support. -->
+    <script src="../webcomponentsjs/webcomponents.min.js"></script>
+    <!-- 2. Use an HTML Import to bring in the element. -->
+<!--    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,300italic,400' rel='stylesheet' type='text/css'>-->
+    <link rel="import" href="watchface-container.html">
+    <style>
+        p {
+            top: 50px;
+        }
+    </style>
+    <!-- IMPORTS RESTRICTED TO A SINGLE FILE -->
+</head>
+<!-- use fullbleed attribute to specify
+     the body should fill the viewport -->
+
+<body fullbleed vertical layout>
+   <watchface-container><p>This is watchface container </p></watchface-container>
+</body unresolved>
+
+</html>
